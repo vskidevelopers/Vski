@@ -233,33 +233,37 @@
             <h2 class="heading">Contact</h2>
             <div class="row">
               <div class="col-lg-6">
-                <form id="contact-form" method="post" action="#" class="contact-form">
+                <form id="contact-form" action="#intro" class="contact-form" name="contact" method="POST" data-netlify="true">
                   <div class="controls">
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label for="name">Your First Name </label>
-                          <input type="text" name="name" placeholder="Enter your first name" required="required" class="form-control">
+                          <label for="first_name">Your First Name </label>
+                          <input type="text" name="first_name" placeholder="Enter your first name" required="required" class="form-control">
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label for="surname">Your Last Name </label>
-                          <input type="text" name="surname" placeholder="Enter your  last name" required="required" class="form-control">
+                          <label for=" last_name">Your Last Name </label>
+                          <input type="text" name="last_name" placeholder="Enter your  last name" required="required" class="form-control">
                         </div>
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="surname">Your email </label>
+                      <label for="email">Your email </label>
                       <input type="email" name="email" placeholder="Enter your  email" required="required" class="form-control">
                     </div>
                     <div class="form-group">
-                      <label for="surname">Your message for us </label>
+                      <label for="massage">Your message for us </label>
                       <textarea rows="4" name="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
                     </div>
                     <div class="text-center">
-                      <input type="submit" name="name" value="Send message" class="btn btn-secondary btn-block">
+                      <input type="submit" name="submit" value="Send message" class="btn btn-secondary btn-block">
                     </div>
+                    <div class="form-group">
+                      <div data-netlify-recaptcha="true"></div>
+                    </div>
+                    <input type="hidden" name="form-name" value="contact">
                   </div>
                 </form>
               </div>
