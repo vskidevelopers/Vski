@@ -1,0 +1,17 @@
+.rounded-circle-div {
+  width: 500px;
+  height: auto;
+  border-radius: 50% !important;
+  overflow: hidden;
+}
+
+.rounded-circle-img {
+  width: 550px;
+  height: auto;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
