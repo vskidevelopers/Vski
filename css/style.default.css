@@ -347,6 +347,12 @@ h6,
   }
 }
 
+@media (max-width: 560px) {
+  p.social {
+    flex-direction: row;
+  }
+}
+
 @media (max-width: 400px) {
   .rounded-circle-div {
     width: 350px;
@@ -358,6 +364,10 @@ h6,
   .rounded-circle-img {
     width: 400px;
     height: auto;
+  }
+
+  p.social {
+    flex-direction: row;
   }
 
   .centered {
